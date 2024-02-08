@@ -2,15 +2,15 @@ import React from 'react'
 
 const BagSummary = () => {
   return (
-    <div className="bag-summary">
-      <div className="bag-details-container">
-        <div className="price-header">PRICE DETAILS totalItem Items </div>
-        <div className="price-item">
-          <span className="price-item-tag">Total MRP</span>
-          <span className="price-item-value">₹totalMRP</span>
+    <div className=" w-64  bg-slate-50 shadow-md">
+      <div >
+        <div >PRICE DETAILS totalItem Items </div>
+        <div>
+          <span >Total MRP</span>
+          <span >₹totalMRP</span>
         </div>
-        <div className="price-item">
-          <span className="price-item-tag">Discount on MRP</span>
+        <div >
+          <span >Discount on MRP</span>
           <span className="price-item-value priceDetail-base-discount">
             -₹totalDiscount
           </span>

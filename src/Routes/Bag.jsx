@@ -4,7 +4,7 @@ import BagSummary from '../Components/BagSummary'
 
 const Bag = () => {
   return (
-    <div className=' flex justify-between px-4'>
+    <div className=' flex gap-10'>
         
         <BagItem/>
         <BagSummary/>

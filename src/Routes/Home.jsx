@@ -4,9 +4,9 @@ import { useSelector } from 'react-redux'
 
 const Home = () => {
    const items =  useSelector( (store)=> store.item)
-  //  console.log(items)
+    // console.log(items)
   return (
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-4 bg-red-300 pt-4 '>
+      <div className=' flex flex-wrap justify-center gap-10 my-8'>
         {items && items.map((item) => <Items item={item} key={item.id} />)}
       </div>
   )

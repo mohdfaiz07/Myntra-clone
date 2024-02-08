@@ -65,7 +65,7 @@ export const itemsData = [
     },
 
     {
-        id: '001',
+        id: '005',
         image: '/images/1.jpg',
         company: 'rolex',
         item_name: "watch",
@@ -81,7 +81,7 @@ export const itemsData = [
     },
 
     {
-        id: '002',
+        id: '006',
         image: '/images/2.jpg',
         company: 'rolex',
         item_name: "watch",
@@ -97,7 +97,7 @@ export const itemsData = [
     },
 
     {
-        id: '003',
+        id: '007',
         image: '/images/3.jpg',
         company: 'rolex',
         item_name: "watch",
@@ -113,7 +113,7 @@ export const itemsData = [
     },
 
     {
-        id: '004',
+        id: '008',
         image: '/images/4.jpg',
         company: 'rolex',
         item_name: "watch",

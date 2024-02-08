@@ -2,10 +2,13 @@ import React from "react";
 import { CgProfile } from "react-icons/cg";
 import { CiHeart } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
+import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 
 
 const Header = () => {
+  const Bag =   useSelector((store)=> store.bag)
+   
   return (
     <nav  className="flex justify-between gap-3 px-10 py-3 items-center   ">
       <Link to = '/'>
@@ -52,10 +55,13 @@ const Header = () => {
           <h6>Proile</h6>
         </div>
 
-        <div className="flex items-center flex-col">
+        <div className="flex items-center flex-col relative ">
           <IoBagOutline  className="text-base"/>
           <Link to = '/bag'>Bag</Link> 
-          
+          {Bag.length>=1 && <div className="rounded-full px-1 absolute pos-top pos-right bg-red-600">
+            <p className=" text-white font-bold ">{Bag.length}</p>
+          </div>
+          }
           
         </div>
       </div>
